@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Reverse from './Challenges/Reverse';
+import Factorial from './Challenges/Factorial';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: '#eee2dc' }}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Reverse />
+      <Factorial />
     </div>
   );
 }

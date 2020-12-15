@@ -2,12 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Reverse from './Challenges/Reverse';
 import Factorial from './Challenges/Factorial';
+import Palindrome from './Challenges/Palindrome'
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: '#eee2dc' }}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="App">
+      <header className="App-header" style={{ backgroundColor: 'black' }}>
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,10 +19,24 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <nav style={{ display: 'flex', justifyContent: 'space-around' }}>
+          <p>element</p>
+          <p>second element</p>
+        </nav>
       </header>
-      <Reverse />
-      <Factorial />
+      <body>
+        <div>        
+          <Reverse />
+        </div>
+        <div>
+          <Factorial />
+        </div>
+        <div>
+          <Palindrome />
+        </div>
+      </body>
+
     </div>
   );
 }

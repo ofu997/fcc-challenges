@@ -17,7 +17,6 @@ const Factorial = () => {
       setResult(factorialResult); 
     }
 
-
     setVisible('block');
     event.target.placeholder = 'Enter a string to be reversed' 
     event.preventDefault();

@@ -8,7 +8,7 @@ body {
   background-color: #eee2dc;
 }
 
-body > div {
+section > div {
   margin-bottom: 10%;
 } 
 

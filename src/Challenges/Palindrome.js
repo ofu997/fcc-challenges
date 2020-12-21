@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import FormPrototype from '../FormPrototype'
 
 const Palindrome = () => {
-  const [string, setString] = useState('');
+  const [input, setInput] = useState('');
   const [result, setResult] = useState(''); 
 
   const checkIfPalindrome = event => {
-    let lowerCaseString = string.toLowerCase()
+    let lowerCaseString = input.toLowerCase()
     
     let lowerCaseNoSpacesString=lowerCaseString
       .replace(' ','')
@@ -35,13 +35,13 @@ const Palindrome = () => {
   }
 
   const handleChange = event => {
-    setString(event.target.value);
+    setInput(event.target.value);
   }
 
   return (
     <>
       <FormPrototype 
-        value={string}
+        value={input}
         onChange={handleChange}
         handleSubmit={checkIfPalindrome}
         result={result}

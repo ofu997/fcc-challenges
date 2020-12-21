@@ -3,6 +3,8 @@ import './App.css';
 import Reverse from './Challenges/Reverse';
 import Factorial from './Challenges/Factorial';
 import Palindrome from './Challenges/Palindrome'
+import LongestWord from './Challenges/LongestWordInAString'
+import TitleCase from './Challenges/TitleCase'
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
           <p>second element</p>
         </nav>
       </header>
-      <body>
+      <section>
         <div>        
           <Reverse />
         </div>
@@ -35,7 +37,13 @@ function App() {
         <div>
           <Palindrome />
         </div>
-      </body>
+        <div>
+          <LongestWord />
+        </div>
+        <div>
+          <TitleCase />
+        </div>
+      </section>
 
     </div>
   );
